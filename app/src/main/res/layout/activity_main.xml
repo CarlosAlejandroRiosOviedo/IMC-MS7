@@ -11,17 +11,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione el Peso en Kilogramos"/>
+        android:text="@string/TextoPeso"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_peso"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione la Estatura en Metros"/>
+        android:text="@string/TextoEstatura"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_estatura"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,22 +33,25 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calcular"/>
+            android:text="@string/TextoBotonCalcular"
+            android:id="@+id/boton_calcular"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Limpiar"/>
+            android:text="@string/TextoBotonLimpiar"
+            android:id="@+id/boton_limpiar"/>
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="El Indice de Masa Corporal es: "/>
+        android:text="@string/TextoResultado"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:id="@+id/etiqueta_imc"
         android:text="0.0"/>
 
 </LinearLayout>
